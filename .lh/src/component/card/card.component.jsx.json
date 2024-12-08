@@ -3,7 +3,7 @@
     "activeCommit": 0,
     "commits": [
         {
-            "activePatchIndex": 5,
+            "activePatchIndex": 8,
             "patches": [
                 {
                     "date": 1733050145264,
@@ -28,6 +28,18 @@
                 {
                     "date": 1733136428911,
                     "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+\r\n+import './card.styles.css';\r\n+\r\n+const Card = ({monster}) => {\r\n+  \r\n+        const {id,name,email} = monster;\r\n+        return(\r\n+            <div className='card-container' key={id}>\r\n+            <img \r\n+            alt={`monster ${name}`} \r\n+            src={`https://robohash.org/${id}?set=set2`}/>\r\n+            <h2>{name}</h2>\r\n+            <p>{email}</p>\r\n+            </div>  \r\n+        )\r\n+   \r\n+}\r\n+\r\n+export default Card;\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1733650493343,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,27 @@\n+\r\n+import './card.styles.css';\r\n+\r\n+const Card = ({monster}) => {\r\n+  \r\n+        const {id,name,email} = monster;\r\n+        return(\r\n+            <div className='card-container' key={id}>\r\n+            <img \r\n+            alt={`monster ${name}`} \r\n+            src={`https://robohash.org/${id}?set=set2`}/>\r\n+            <h2>{name}</h2>\r\n+            <p>{email}</p>\r\n+            <h1>hsdj</h1>\r\n+            </div>  \r\n+        )\r\n+   \r\n+}\r\n+\r\n+export default Card;\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1733650508370,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -10,9 +10,9 @@\n             alt={`monster ${name}`} \r\n             src={`https://robohash.org/${id}?set=set2`}/>\r\n             <h2>{name}</h2>\r\n             <p>{email}</p>\r\n-            <h1>hsdj</h1>\r\n+            <h1>hsdj</h1>dvjhgsjg\r\n             </div>  \r\n         )\r\n    \r\n }\r\n@@ -24,56 +24,4 @@\n \r\n \r\n \r\n \r\n-\r\n-import './card.styles.css';\r\n-\r\n-const Card = ({monster}) => {\r\n-  \r\n-        const {id,name,email} = monster;\r\n-        return(\r\n-            <div className='card-container' key={id}>\r\n-            <img \r\n-            alt={`monster ${name}`} \r\n-            src={`https://robohash.org/${id}?set=set2`}/>\r\n-            <h2>{name}</h2>\r\n-            <p>{email}</p>\r\n-            </div>  \r\n-        )\r\n-   \r\n-}\r\n-\r\n-export default Card;\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-import './card.styles.css';\r\n-\r\n-const Card = () => {\r\n-  \r\n-        const {id,name,email} = this.props.monster;\r\n-        return(\r\n-            <div className='card-container' key={id}>\r\n-            <img \r\n-            alt={`monster ${name}`} \r\n-            src={`https://robohash.org/${id}?set=set2`}/>\r\n-            <h2>{name}</h2>\r\n-            <p>{email}</p>\r\n-            </div>  \r\n-        )\r\n-   \r\n-}\r\n-\r\n-export default Card;\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-\r\n"
+                },
+                {
+                    "date": 1733650518568,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -9,10 +9,9 @@\n             <img \r\n             alt={`monster ${name}`} \r\n             src={`https://robohash.org/${id}?set=set2`}/>\r\n             <h2>{name}</h2>\r\n-            <p>{email}</p>\r\n-            <h1>hsdj</h1>dvjhgsjg\r\n+            <p>{email}</p>            \r\n             </div>  \r\n         )\r\n    \r\n }\r\n"
                 }
             ],
             "date": 1733050145264,
