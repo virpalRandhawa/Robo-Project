@@ -1,0 +1,18 @@
+{
+    "sourceFile": "src/component/card/card.styles.css",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1733050194561,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1733050194561,
+            "name": "Commit-0",
+            "content": ".card-container {\r\n    display: flex;\r\n    flex-direction: column;\r\n    background-color: #95dada;\r\n    border: 1px solid grey;\r\n    border-radius: 5px;\r\n    padding: 25px;\r\n    cursor: pointer;\r\n    -moz-osx-font-smoothing: grayscale;\r\n    backface-visibility: hidden;\r\n    transform: translateZ(0);\r\n    transition: transform 0.25s ease-out;\r\n  }\r\n  \r\n  .card-container:hover {\r\n    transform: scale(1.05);\r\n  }"
+        }
+    ]
+}

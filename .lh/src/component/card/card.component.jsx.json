@@ -1,0 +1,38 @@
+{
+    "sourceFile": "src/component/card/card.component.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 5,
+            "patches": [
+                {
+                    "date": 1733050145264,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733050468936,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,25 @@\n+import { Component } from \"react\";\r\n+\r\n+class Card extends Component{\r\n+    render() {\r\n+        const {id,name,email} = this.props.monster;\r\n+        return(\r\n+            <div className='card-container' key={id}>\r\n+            <img \r\n+            alt={`monster ${name}`} \r\n+            src={`https://robohash.org/${id}?set=set2`}/>\r\n+            <h2>{name}</h2>\r\n+            <p>{email}</p>\r\n+            </div>  \r\n+        )\r\n+    }\r\n+}\r\n+\r\n+export default Card;\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1733050680362,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+import { Component } from \"react\";\r\n+import './card.styles.css';\r\n+\r\n+class Card extends Component{\r\n+    render() {\r\n+        const {id,name,email} = this.props.monster;\r\n+        return(\r\n+            <div className='card-container' key={id}>\r\n+            <img \r\n+            alt={`monster ${name}`} \r\n+            src={`https://robohash.org/${id}?set=set2`}/>\r\n+            <h2>{name}</h2>\r\n+            <p>{email}</p>\r\n+            </div>  \r\n+        )\r\n+    }\r\n+}\r\n+\r\n+export default Card;\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n"
+                },
+                {
+                    "date": 1733062368621,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -23,54 +23,4 @@\n \r\n \r\n \r\n \r\n-import { Component } from \"react\";\r\n-\r\n-class Card extends Component{\r\n-    render() {\r\n-        const {id,name,email} = this.props.monster;\r\n-        return(\r\n-            <div className='card-container' key={id}>\r\n-            <img \r\n-            alt={`monster ${name}`} \r\n-            src={`https://robohash.org/${id}?set=set2`}/>\r\n-            <h2>{name}</h2>\r\n-            <p>{email}</p>\r\n-            </div>  \r\n-        )\r\n-    }\r\n-}\r\n-\r\n-export default Card;\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-import { Component } from \"react\";\r\n-\r\n-class Card extends Component{\r\n-    render() {\r\n-        const {id,name,email} = this.props;\r\n-        return(\r\n-            <div className='card-container' key={id}>\r\n-            <img \r\n-            alt={`monster ${name}`} \r\n-            src={`https://robohash.org/${id}?set=set2`}/>\r\n-            <h2>{name}</h2>\r\n-            <p>{email}</p>\r\n-            </div>  \r\n-        )\r\n-    }\r\n-}\r\n-\r\n-\r\n-\r\n-\r\n-\r\n-export default Card;\r\n-\r\n-\r\n-\r\n"
+                },
+                {
+                    "date": 1733136348193,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,9 +1,9 @@\n-import { Component } from \"react\";\r\n+\r\n import './card.styles.css';\r\n \r\n-class Card extends Component{\r\n-    render() {\r\n+const Card = () => {\r\n+  \r\n         const {id,name,email} = this.props.monster;\r\n         return(\r\n             <div className='card-container' key={id}>\r\n             <img \r\n@@ -12,9 +12,9 @@\n             <h2>{name}</h2>\r\n             <p>{email}</p>\r\n             </div>  \r\n         )\r\n-    }\r\n+   \r\n }\r\n \r\n export default Card;\r\n \r\n"
+                },
+                {
+                    "date": 1733136428911,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -0,0 +1,26 @@\n+\r\n+import './card.styles.css';\r\n+\r\n+const Card = ({monster}) => {\r\n+  \r\n+        const {id,name,email} = monster;\r\n+        return(\r\n+            <div className='card-container' key={id}>\r\n+            <img \r\n+            alt={`monster ${name}`} \r\n+            src={`https://robohash.org/${id}?set=set2`}/>\r\n+            <h2>{name}</h2>\r\n+            <p>{email}</p>\r\n+            </div>  \r\n+        )\r\n+   \r\n+}\r\n+\r\n+export default Card;\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n+\r\n"
+                }
+            ],
+            "date": 1733050145264,
+            "name": "Commit-0",
+            "content": "import { Component } from \"react\";\r\n\r\nclass Card extends Component{\r\n    render() {\r\n        const {id,name,email} = this.props;\r\n        return(\r\n            <div className='card-container' key={id}>\r\n            <img \r\n            alt={`monster ${name}`} \r\n            src={`https://robohash.org/${id}?set=set2`}/>\r\n            <h2>{name}</h2>\r\n            <p>{email}</p>\r\n            </div>  \r\n        )\r\n    }\r\n}\r\n\r\n\r\n\r\n\r\n\r\nexport default Card;\r\n\r\n\r\n\r\n"
+        }
+    ]
+}

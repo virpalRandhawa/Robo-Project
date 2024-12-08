@@ -1,0 +1,26 @@
+{
+    "sourceFile": "src/component/search-box/search-box.component.jsx",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 2,
+            "patches": [
+                {
+                    "date": 1733040142660,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                },
+                {
+                    "date": 1733136623208,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,19 +1,13 @@\n import {Component} from 'react';\r\n import './search-box.styles.css';\r\n \r\n-class SearchBox extends Component {\r\n-    render() {\r\n-        return(\r\n+const SearchBox = ({className,placeholder,onChangeHandler}) => (  \r\n+      \r\n             <input \r\n-            className={` search-box ${this.props.className}`} \r\n+            className={` search-box ${className}`} \r\n             type='search' \r\n-            placeholder={this.props.placeholder}\r\n-            onChange={this.props.onChangeHandler}/>\r\n-        )\r\n-    }\r\n+            placeholder={placeholder}\r\n+            onChange={onChangeHandler}/>\r\n+        );\r\n \r\n-    \r\n-}\r\n-\r\n-\r\n export default SearchBox;\n\\ No newline at end of file\n"
+                },
+                {
+                    "date": 1733136628664,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n@@ -1,5 +1,5 @@\n-import {Component} from 'react';\r\n+\r\n import './search-box.styles.css';\r\n \r\n const SearchBox = ({className,placeholder,onChangeHandler}) => (  \r\n       \r\n"
+                }
+            ],
+            "date": 1733040142660,
+            "name": "Commit-0",
+            "content": "import {Component} from 'react';\r\nimport './search-box.styles.css';\r\n\r\nclass SearchBox extends Component {\r\n    render() {\r\n        return(\r\n            <input \r\n            className={` search-box ${this.props.className}`} \r\n            type='search' \r\n            placeholder={this.props.placeholder}\r\n            onChange={this.props.onChangeHandler}/>\r\n        )\r\n    }\r\n\r\n    \r\n}\r\n\r\n\r\nexport default SearchBox;"
+        }
+    ]
+}
